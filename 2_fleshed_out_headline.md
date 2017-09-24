@@ -100,4 +100,4 @@ ContorollerはModel（データベース）から必要な要素を収集し、V
 
 ### 命名規則
 
-Railsは、
+Railsは、test
