@@ -102,17 +102,13 @@ Controllerはというと、これは画面上に具体的に表示されてい�
 ContorollerはModel（データベース）から必要な要素を収集し、Viewに反映させます。
 
 ```
-　　　　　　　　　　　　　　　Model
-                          ↑ ↓  
-ブラウザ → ルーティング → Controller → View
+ブラウザ → ルーティング → Controller → Model → Controller → View
 ```
 
 そうしてできあがったViewが、再度、コントローラーを経由してブラウザに返され、表示されるwebページになるわけです。
 
 ```
-　　　　　　　　　　　　　　　Model
-                          ↑ ↓  
-ブラウザ → ルーティング → Controller → View → Controller → ブラウザ
+ブラウザ → ルーティング → Controller → Model → Controller → View → Controller → ブラウザ
 ```
 
 実際には、Modelから収集した情報のすべてがViewに表示されるわけではありませんし、もっと複雑な処理が組み合わさっていたりするのですが、全体の流れとして覚えておいてください。
